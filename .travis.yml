@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t Maheshs -f Dockerfile.dev .
+
+script:
+  - docker run Maheshs npm run test -- --coverage
