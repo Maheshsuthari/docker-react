@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t maheshs -f Dockerfile.dev .
+  - docker build -t maheshs -f Dockerfile.txt .
 
 script:
   - docker run maheshs npm run test -- --coverage
