@@ -5,8 +5,6 @@ services:
 before_install:
   - docker build -t maheshs -f Dockerfile.txt .
 
-script:
-  - docker run maheshs npm run test -- --coverage
 deploy:
   provider: azure_web_apps
   username: sutari.mahesh1@live.com
