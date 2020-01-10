@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t maheshs -f Dockerfile.dev .
+  - docker build -t maheshs -f Dockerfile.Dev .
 deploy:
   provider: azure_web_apps
   skip_cleanup: true
