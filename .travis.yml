@@ -7,6 +7,6 @@ before_install:
 languages: node_js
 deploy:
   provider: azure_web_apps
-  username: sutari.mahesh1@live.com
-  password: mother@123
-  site: https://docker-mahi.azurewebsites.net
+  skip_cleanup: true
+  on:
+    branch: release
