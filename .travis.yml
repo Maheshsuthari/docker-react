@@ -4,7 +4,6 @@ services:
 
 before_install:
   - docker build -t maheshs -f Dockerfile.txt .
-languages: node_js
 deploy:
   provider: azure_web_apps
   skip_cleanup: true
