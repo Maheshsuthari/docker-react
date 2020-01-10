@@ -1,7 +1,7 @@
 sudo: required
 services:
   - docker
-
+languages: node_js
 before_install:
   - docker build -t maheshs -f Dockerfile.Dev .
 deploy:
